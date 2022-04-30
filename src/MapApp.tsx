@@ -1,10 +1,16 @@
-import { PlacesProvider } from "./context"
+import { MapProvider, PlacesProvider } from "./context"
+import { HomeScreen } from "./screens"
+
+import './index.css'
+
 
 
 export const MapApp = () => {
   return (
     <PlacesProvider>
-        <h1>hola mundo</h1>
+      <MapProvider>
+        <HomeScreen />
+      </MapProvider>
     </PlacesProvider>
   )
 }
