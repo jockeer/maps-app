@@ -1,11 +1,11 @@
-import { AnySourceData, LngLatBounds, Map, Marker, Popup } from "mapbox-gl"
 import { MapContext } from './MapContext';
 import { useReducer, useContext, useEffect } from 'react';
 import { mapReducer } from "./MapReducer";
 import { PlacesContext } from '../places/PlacesContext';
 import { direactionsAPI } from "../../apis";
 import { DirectionsResponse } from '../../interfaces/directions';
-
+//@ts-ignore
+import { AnySourceData, LngLatBounds, Map, Marker, Popup } from "!mapbox-gl"
 
 export interface MapState {
     isMapReady: boolean,
