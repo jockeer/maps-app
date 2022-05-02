@@ -1,3 +1,4 @@
+/* eslint import/no-webpack-loader-syntax: off */ 
 import { MapContext } from './MapContext';
 import { useReducer, useContext, useEffect } from 'react';
 import { mapReducer } from "./MapReducer";
