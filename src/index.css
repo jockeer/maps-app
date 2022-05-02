@@ -19,3 +19,6 @@
     border-radius: 5px;
     overflow-y: scroll;
 }
+.pointer {
+    cursor: pointer;
+}
